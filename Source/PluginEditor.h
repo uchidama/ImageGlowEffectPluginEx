@@ -14,7 +14,8 @@
 //==============================================================================
 /**
 */
-class ImageGlowEffectPluginExAudioProcessorEditor  : public juce::AudioProcessorEditor
+class ImageGlowEffectPluginExAudioProcessorEditor  : public juce::AudioProcessorEditor,
+    private juce::Timer
 {
 public:
     ImageGlowEffectPluginExAudioProcessorEditor (ImageGlowEffectPluginExAudioProcessor&);
@@ -23,6 +24,8 @@ public:
     //==============================================================================
     void paint (juce::Graphics&) override;
     void resized() override;
+
+    void timerCallback() override;
 
 private:
     // This reference is provided as a quick way for your editor to
@@ -33,5 +36,6 @@ private:
 
     juce::Image background;
     juce::GlowEffect eff;
-    
+  
+    int frame_count;
 };
