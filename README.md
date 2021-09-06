@@ -1,5 +1,5 @@
 # ImageGlowEffectPluginEx
-[![Image from Gyazo](https://i.gyazo.com/fa440c68ac516fe4784885578bbf2bd5.gif)](https://gyazo.com/fa440c68ac516fe4784885578bbf2bd5)
+[![Image from Gyazo](https://i.gyazo.com/f8fc161f56ad2254eb77e7f704feb2ae.gif)](https://gyazo.com/f8fc161f56ad2254eb77e7f704feb2ae)  
 juce::GlowEffect simple sample as plugin
 
 # Reference
